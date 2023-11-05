@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Register</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href="{{ url_for('static', filename='CSS/registerStyle.css') }}">
+</head>
+<body>
+	<form action="/validate-register" method="post" class="Myform" id="Myform">
+		<div id="Regis">
+			<div class="cover-acc">
+				<div class="logo">
+                    <a href="#" class="logo">SA<span>BAI.</span></a>
+                </div>
+			<legend id="Topic">Register</legend>
+			<span id="Errormsg"></span> <br>
+
+				Name <br>
+			    <input type="Text"  placeholder="Enter your name" id="fn" name="Firstname"required >
+			    <br><br>
+
+				Email <br>
+		      	<input type="email"  placeholder="Enter your email" id="em" name="Email"required >
+			    <br><br>
+			
+                 Username <br>
+		      	<input type="Text"  placeholder="Enter your username" id="un" name="Username"required >
+			    <br><br>
+			
+                Password <br>
+		  	    <input type="Password"  placeholder="Enter your password" id="ps" name="Password" required>
+			    <br><br>
+			
+                Confirmed Password <br>
+			    <input type="Password"  placeholder="confirm your password" id="cps" name="Confirmedpassword" required>
+			    <br><br>
+
+				<input type="Submit"  value="Sign Up" class="buttonsign-up">
+
+			
+			</div>
+		</div>
+	</form>
+	<script src="{{ url_for('static', filename='js/register.js') }}"></script>
+</body>
+</html>

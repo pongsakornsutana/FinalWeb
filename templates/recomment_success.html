@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page | Recomment Success</title>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='/CSS/loginStyle.css'> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/recommentStyle.css') }}" />
+</head>
+<body>
+    <div class="LGBOX">
+        <form name="myLogin" id = "myLogin" action="/checkLogin" method="post" accept-charset="utf-8">
+            <fieldset>
+                <div class="logo">
+                    <a href="#" class="logo">SA<span>BAI.</span></a>
+                </div>
+                <h1>We got your recommentation!! Thank you</h1>
+
+                <a href="/main" class="buttonStyle3"> Go back to<span>Main page</span></a>
+                <!-- <button onclick="document.location='/register.html'" class="buttonStyle3"> Register</button> -->
+            </fieldset>
+        </form>
+        </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page | login</title>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='/CSS/loginStyle.css'> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/loginStyle.css') }}" />
+</head>
+<body>
+    <div class="LGBOX">
+        <form name="myLogin" id = "myLogin" action="/checkLogin" method="post" accept-charset="utf-8">
+            <fieldset>
+                <div class="logo">
+                    <a href="#" class="logo">SA<span>BAI.</span></a>
+                </div>
+                <h1>Log in</h1>
+                <span>Username</span>  <br>
+                <input type="text"  placeholder="Enter your username" name="username" id="username" required>
+                <br>
+                <span>Password</span>  <br>
+                <input type="password" placeholder="Enter your password" name="password" id="pass" required>
+                <br>
+                <input type="submit" value="Login" class="buttonStyle1">
+                <!-- <button onclick="document.location='/register.html'" class="buttonStyle3"> Register</button> -->
+                <a href="/register" class="buttonStyle3"> Dont have an account?<span>Register here</span></a>
+            </fieldset>
+        </form>
+        </div>
+        <script src="{{ url_for('static', filename='js/login.js') }}"></script>
+</body>
+</html>
