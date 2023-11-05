@@ -4,7 +4,7 @@ from unicodedata import name
 from flask import Flask ,render_template,url_for,redirect,request,session
 # Create mysql connector to server
 import mysql.connector as mysql
-# File and Directory
+# File and Directory/
 import os 
 # Hash Function md5()
 import hashlib 
